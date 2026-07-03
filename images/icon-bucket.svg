@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="#fff4dd"/>
+  <path d="M55 90 L68 175 Q100 190 132 175 L145 90 Z" fill="#e8383a"/>
+  <rect x="50" y="75" width="100" height="20" rx="6" fill="#d62828"/>
+  <text x="100" y="90" text-anchor="middle" font-family="Verdana" font-weight="bold" font-size="10" fill="#ffe08a">RFC</text>
+  <path d="M60 115 h80 M58 135 h84 M62 155 h76" stroke="#b81f21" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="80" cy="68" rx="20" ry="14" fill="#e8a13d" transform="rotate(-10 80 68)"/>
+  <ellipse cx="115" cy="60" rx="22" ry="16" fill="#d9902f" transform="rotate(8 115 60)"/>
+</svg>

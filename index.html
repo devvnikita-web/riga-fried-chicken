@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riga Fried Chicken — Kraukšķīga vista Rīgā</title>
+<meta name="description" content="Riga Fried Chicken — kraukšķīga ceptā vista, burgeri un frī kartupeļi ar piegādi Rīgā caur Bolt Food.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="images/logo.svg" alt="Riga Fried Chicken logo" class="brand-logo">
+      <span class="brand-name">Riga Fried<br>Chicken</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu" data-i18n="nav.menu">Ēdienkarte</a>
+      <a href="#about" data-i18n="nav.about">Par mums</a>
+      <a href="#location" data-i18n="nav.location">Atrašanās vieta</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" data-lang="lv">LV</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="https://food.bolt.eu/en/3-riga/p/179836-riga-fried-chicken/" target="_blank" rel="noopener" class="btn btn-primary btn-order-header" data-i18n="nav.order">Pasūtīt</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge" data-i18n="hero.badge">Piegāde 30–40 min</span>
+        <h1 data-i18n="hero.title">RIGA FRIED CHICKEN</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Kraukšķīga vista, kas radīta Rīgai</p>
+        <p class="hero-desc" data-i18n="hero.desc">Svaigi gatavota ceptā vista, sulīgi burgeri un kraukšķīgi frī kartupeļi — piegāde ar Bolt Food visā Rīgā.</p>
+        <div class="hero-ctas">
+          <a href="https://food.bolt.eu/en/3-riga/p/179836-riga-fried-chicken/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="hero.cta">Pasūtīt Bolt Food</a>
+          <a href="#menu" class="btn btn-outline btn-lg" data-i18n="menu.title">Ēdienkarte</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-chicken.svg" alt="Riga Fried Chicken bucket illustration">
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path></svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <img src="images/icon-leg.svg" alt="Chicken leg illustration" class="about-icon">
+      <div>
+        <h2 data-i18n="about.title">Par mums</h2>
+        <p data-i18n="about.text">Riga Fried Chicken ir virtuālā virtuve Rīgas sirdī, kas specializējas Amerikas dienvidu stila ceptā vistā.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-heading">
+        <h2 data-i18n="menu.title">Ēdienkarte</h2>
+        <p data-i18n="menu.subtitle">Viss klāsts — no spaiņiem līdz uzkodām</p>
+      </div>
+
+      <div class="menu-tabs" id="menuTabs"></div>
+      <div id="menuCategories"></div>
+    </div>
+  </section>
+
+  <!-- MAP / LOCATION -->
+  <section class="location-section" id="location">
+    <div class="container location-inner">
+      <div class="location-text">
+        <h2 data-i18n="map.title">Kur mūs atrast</h2>
+        <p data-i18n="map.text">Pasūtini piegādi caur Bolt Food vai paņem līdzi no mūsu virtuves Rīgā.</p>
+        <p class="location-address">📍 <span data-i18n="map.address">Rīga, Latvija</span></p>
+        <p class="location-hours">🕒 <span data-i18n="map.openHours">Katru dienu: 11:00–23:00</span></p>
+        <a href="https://food.bolt.eu/en/3-riga/p/179836-riga-fried-chicken/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="hero.cta">Pasūtīt Bolt Food</a>
+      </div>
+      <div class="map-wrap">
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="Riga Fried Chicken logo">
+      <span>Riga Fried Chicken</span>
+    </div>
+    <a href="https://food.bolt.eu/en/3-riga/p/179836-riga-fried-chicken/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="footer.orderNow">Pasūti tagad Bolt Food</a>
+    <p class="footer-rights">&copy; <span id="year"></span> Riga Fried Chicken. <span data-i18n="footer.rights">Visas tiesības aizsargātas.</span></p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
