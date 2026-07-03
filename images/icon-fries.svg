@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <circle cx="100" cy="100" r="95" fill="#fff4dd"/>
-  <path d="M70 90 L60 175 L145 175 L135 90 Z" fill="#e8383a"/>
-  <path d="M70 90 L145 90 L140 75 L75 75 Z" fill="#d62828"/>
-  <rect x="80" y="45" width="10" height="55" rx="3" fill="#f2c230"/>
-  <rect x="95" y="35" width="10" height="65" rx="3" fill="#f6d666"/>
-  <rect x="110" y="45" width="10" height="55" rx="3" fill="#f2c230"/>
-  <rect x="125" y="55" width="10" height="45" rx="3" fill="#f6d666"/>
-  <rect x="65" y="55" width="10" height="45" rx="3" fill="#f6d666"/>
+  <rect x="64" y="66" width="11" height="46" rx="3" fill="#f6d666"/>
+  <rect x="79" y="54" width="11" height="58" rx="3" fill="#f2c230"/>
+  <rect x="94" y="42" width="11" height="70" rx="3" fill="#f6d666"/>
+  <rect x="109" y="54" width="11" height="58" rx="3" fill="#f2c230"/>
+  <rect x="124" y="66" width="11" height="46" rx="3" fill="#f6d666"/>
+  <path d="M70 116 L55 175 L145 175 L130 116 Z" fill="#e8383a"/>
+  <path d="M78 130 L72 168 M100 130 L100 168 M122 130 L128 168" stroke="#b81f21" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+  <rect x="63" y="99" width="74" height="19" rx="6" fill="#d62828"/>
 </svg>
