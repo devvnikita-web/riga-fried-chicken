@@ -2,12 +2,12 @@
 const translations = {
   lv: {
     langName: "Latviešu",
-    nav: { menu: "Ēdienkarte", about: "Par mums", location: "Atrašanās vieta", order: "Pasūtīt" },
+    nav: { menu: "Ēdienkarte", about: "Par mums", location: "Atrašanās vieta", order: "Pasūti" },
     hero: {
       title: "RIGA FRIED CHICKEN",
       subtitle: "Kraukšķīga vista, kas radīta Rīgai",
       desc: "Svaigi gatavota ceptā vista, sulīgi burgeri un kraukšķīgi frī kartupeļi — piegāde ar Bolt Food visā Rīgā.",
-      cta: "Pasūtīt Bolt Food",
+      cta: "Pasūti Bolt Food",
       badge: "Piegāde 30–40 min"
     },
     about: {
